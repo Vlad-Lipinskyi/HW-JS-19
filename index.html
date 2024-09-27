@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <button type="button" class="modal-open">відкрити модальне вікно</button>
+      <div class="backdrop ishidden">
+        <div class="modal">
+          <h2 class="modaltitle">модальне вікно</h2>
+          <p class="modal-text">
+            Lorem ipsum dolor sit amet consectetur. Вода жираф дуб модалка
+          </p>
+          <button type="button" class="modal-close">закрити</button>
+        </div>
+      </div>
+
+      <form class="form">
+        <p class="form-text">Choose a color:</p>
+        <label class="form-label">
+          Red
+          <input
+            class="color"
+            type="radio"
+            name="color"
+            value="red"
+            class="form-input"
+            checked
+          />
+        </label>
+        <label class="form-label">
+          White
+          <input
+            class="color"
+            type="radio"
+            name="color"
+            value="white"
+            class="form-input"
+          />
+        </label>
+        <label class="form-label">
+          Green
+          <input
+            class="color"
+            type="radio"
+            name="color"
+            value="green"
+            class="form-input"
+          />
+        </label>
+      </form>
+
+      <input type="text" placeholder="Ваше ім'я?" id="name-input" />
+      <h1>Привіт, <span id="name-output">незнайомець</span>!</h1>
+
+      <input
+        type="text"
+        id="validation-input"
+        data-length="6"
+        placeholder="Введи 6 символів"
+      />
+
+      <input id="font-size-control" type="range">
+      <br />
+      <span id="text">Абракадабра!</span>
+
+      <script type="module" src="./index.js"></script>
+    </main>
+  </body>
+</html>
